@@ -19,5 +19,14 @@ body{
 }
 
 #image{
-    margin: 160px;
+    margin-left: 160px;
+
+}
+#titulo{
+    color: royalblue;
+    display: inline-flex;
+}
+
+#nav{
+    display: flex;
 }
