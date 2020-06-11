@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
-
+.gradient-font {
+    font-size: 100px;
+    background: -webkit-linear-gradient(#0273A8, #009D7A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 .container .box{
     position: relative;
     height: 400px;
