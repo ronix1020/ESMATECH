@@ -1,7 +1,67 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 body{
-    background:#474b4e;
+    background: #060c21;
 }
+.container{
+    position:relative;
+    width: 90%;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+}
+.container .box{
+    position: relative;
+    height: auto;
+    background: #1e3175;
+    justify-content:center;
+    align-items: center;
+    border: 1px solid #000; 
+}
+.container .box::before{
+    content: '';
+    position: absolute;
+    top:-2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+    
+}
+
+.content{
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+
+.box .content a{
+    position: relative;
+    margin: 20px 0 0;
+    padding:10px 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    display: inline-block;
+    color: white;
+    transition: 0.5s;
+    transform: rotateY(-40px);
+    opacity:0;
+    visibility: hidden;
+ 
+}
+.box:hover .content a{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.box .content a:hover{
+    
+    color: rgb(12, 11, 10);
+    background: lightgreen;
+}
+
+
 
 #image{
     text-align: center;
@@ -29,4 +89,27 @@ body{
     margin-top: 20px;
     border: rounded;
 }
+#roowTeoria{
+    background : white;
+    border: redonded;
+    margin-top: 20px;
+    border: rounded;
+}
+#cont{
+    color: honeydew;
+}
+#teoria{ 
+    color: rgb(199, 218, 199);
+}
+#tema2{
+    color: lightblue;
+}
+#tema1{
+    color: rgb(11, 107, 139);
+}
+.modal-backdrop{
+    position: relative; 
+}
+  
+
 
