@@ -52,7 +52,7 @@
                 <img src="../IMG/MODULO3/formTriangulo.png" class="mx-auto m-2">
             </p>
             <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5">
+                <div class="card shadow p-3 mb-5" id="ejer1">
                     <div class="card-body mx-auto">
                         <img src="../IMG/MODULO3/ejercicio1M3.png" class="float-left mb-2">
                         <div class="mx-auto">
@@ -67,7 +67,7 @@
             </div>
             <!-- EASY-->
             <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5">
+                <div class="card shadow p-3 mb-5" id="ejer2">
                     <div class="card-body mx-auto">
                         <img src="../IMG/MODULO3/ejercicio2M3.png" class="float-left mb-2">
                         <div class="mx-auto">
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5">
+                <div class="card shadow p-3 mb-5" id="ejer3">
                     <div class="card-body mx-auto">
                         <img src="../IMG/MODULO3/ejercicio3M3.png" class="float-left mb-2">
                         <div class="mx-auto">
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5">
+                <div class="card shadow p-3 mb-5" id="ejer4">
                     <div class="card-body mx-auto">
                         <img src="../IMG/MODULO3/ejercicio4M3.png" class="float-left mb-2">
                         <div class="mx-auto">
@@ -109,7 +109,7 @@
                 </div>
             </div>
             <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5">
+                <div class="card shadow p-3 mb-5" id="ejer5">
                     <div class="card-body mx-auto">
                         <img src="../IMG/MODULO3/ejercicio5M3.png" class="float-left mb-2">
                         <div class="mx-auto">
@@ -123,7 +123,7 @@
                 </div>
             </div>
             <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5">
+                <div class="card shadow p-3 mb-5" id="ejer6">
                     <div class="card-body mx-auto">
                         <img src="../IMG/MODULO3/ejercicio6M3.png" class="float-left mb-2">
                         <div class="mx-auto">
@@ -154,23 +154,36 @@
     <script>
         function ejercicio1() {
             var cont = 0;
+            var e1 = false;
+            var e2 = false;
+            var e3 = false;
+            var e4 = false;
+            var e5 = false;
+            var e6 = false;
+
             if (document.getElementById("E1_2").checked == true){
                 cont++;
+                e1 = true;
             }
             if (document.getElementById("E2_3").checked == true){
                 cont++;
+                e2 = true;
             }
             if (document.getElementById("E3_3").checked == true){
                 cont++;
+                e3 = true;
             }
             if (document.getElementById("E4_1").checked == true){
                 cont++;
+                e4 = true;
             }
             if (document.getElementById("E5_3").checked == true){
                 cont++;
+                e5 = true;
             }
             if (document.getElementById("E6_2").checked == true){
                 cont++;
+                e6 = true;
             }
 
             // ahora si xdxd
@@ -178,28 +191,42 @@
             valorp = 10 / 6;
             puntos = valorp * cont;
             var txt = "Has obtenido un total de " + puntos.toFixed(2) + " puntos de 10.";
+            //modificacion de las clases
+            if (e1 == false){
+                document.getElementById("ejer1").className += " bg-danger";
+            }else{
+                document.getElementById("ejer1").className += " bg-success";
+            }
+            if (e2 == false){
+                document.getElementById("ejer2").className += " bg-danger";
+            }else{
+                document.getElementById("ejer2").className += " bg-success";
+            }
+            if (e3 == false){
+                document.getElementById("ejer3").className += " bg-danger";
+            }else{
+                document.getElementById("ejer3").className += " bg-success";
+            }
+            if (e4 == false){
+                document.getElementById("ejer4").className += " bg-danger";
+            }else{
+                document.getElementById("ejer4").className += " bg-success";
+            }
+            if (e5 == false){
+                document.getElementById("ejer5").className += " bg-danger";
+            }else{
+                document.getElementById("ejer5").className += " bg-success";
+            }
+            if (e6 == false){
+                document.getElementById("ejer6").className += " bg-danger";
+            }else{
+                document.getElementById("ejer6").className += " bg-success";
+            }
+            //agregamos el puntaje final
             document.getElementById("respuesta1").innerHTML = txt;
+            document.getElementById("btn1").disabled = true;
+            
         }
-            /*
-        var form1 = document.forms[0];
-        var txt = "";
-        var i;
-        for (i = 0; i < form1.length; i++) {
-            if  (form1[i].checked == form1[0].checked) {
-                //txt = txt + form1[i].value + " ";
-                //no se pero esto esta fumado, chequea el primero y obtiene de respuesta lo que esta en el segundo
-                //solo diosito sabe como funciona, pero funciona de alguna forma
-                txt = "Respuesta correcta! " + form1[1].value;
-            }
-            else{
-                txt = "Respuesta incorrecta";
-            }
-        }
-        document.getElementById("respuesta1").style.visibility="visible";
-        document.getElementById("respuesta1").innerHTML = txt;
-    }
-    */
-    
     </script>
 </body>
 
