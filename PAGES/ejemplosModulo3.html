@@ -2,51 +2,53 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ecuacion Cuadratica</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuacion Cuadratica</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body class="bg-dark">
-  <div class="container mb-4">
-    <!-- BARRA NAVEGACION -->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark d-flex bg-dark shadow p-3 mb-5 bg-dark rounded">
-      <a class="navbar-brand gradient-font" href="../index.html">
-        <h4><b>ESMATECH</b></h4>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link pl-4 pr-4" style="color: #009D7A;" href="../index.html"><i
-                class="fas fa-home pr-2"></i><b>Inicio</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pl-4 pr-4" style="color: #009D7A;" href="#"><i class="fas fa-star pr-2"></i><b>Acerca
-                de</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pl-4 pr-4" style="color: #009D7A;" href="#"><i
-                class="fas fa-info pr-2"></i><b>Ayuda</b></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="container mb-4">
+        <!-- BARRA NAVEGACION -->
+        <nav class="navbar navbar-expand-lg navbar navbar-dark d-flex bg-dark shadow p-3 mb-5 bg-dark rounded">
+            <a class="navbar-brand gradient-font" href="../index.html">
+                <h4><b>ESMATECH</b></h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link pl-4 pr-4" style="color: #009D7A;" href="../index.html"><i
+                                class="fas fa-home pr-2"></i><b>Inicio</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-4 pr-4" style="color: #009D7A;" href="#"><i
+                                class="fas fa-star pr-2"></i><b>Acerca
+                                de</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-4 pr-4" style="color: #009D7A;" href="#"><i
+                                class="fas fa-info pr-2"></i><b>Ayuda</b></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <div class="row bg-light rounded">
             <p class="m-4">
                 Encuentra la ecuación que determina la longitud desconocida en cada figura y selecciona la
                 respuesta correcta.
                 <br>
-                Ten en cuenta que en el caso de los triángulos puedes obtener las respuestas utilizando la fórmula para el área del triángulo:
+                Ten en cuenta que en el caso de los triángulos puedes obtener las respuestas utilizando la fórmula para
+                el área del triángulo:
                 <img src="../IMG/MODULO3/formTriangulo.png" class="mx-auto m-2">
             </p>
             <div class="col-sm-12">
@@ -54,13 +56,17 @@
                     <div class="card-body mx-auto">
                         <img src="../IMG/MODULO3/ejercicio1M3.png" class="float-left mb-2">
                         <div class="mx-auto">
-                            <form>
-                                <input type="radio" name="colors" id="E1_1"> <b>x-25=0</b><br>
-                                <input type="radio" name="colors" id="E1_2"> <b>x<sup><b>2</b></sup>-25=0</b><br>
-                                <input type="radio" name="colors" id="E1_1"> <b>x-x-25=0</b>
+                            <form class="mt-5">
+                                <input type="radio" name="E1" id="E1_1" value="<b>x-25=0</b><br>"> <b>x-25=0</b><br>
+                                <input type="radio" name="E1" id="E1_2" value="<b>x<sup><b>2</b></sup>-25=0</b><br>">
+                                <b>x<sup><b>2</b></sup>-25=0</b><br>
+                                <input type="radio" name="E1" id="E1_1" value="<b>x-x-25=0</b>"> <b>x-x-25=0</b><br>
+                                <input type="button" name="btn1" id="btn1" value="Comprobar"
+                                onclick="ejercicio1()">
                             </form>
                             <br>
-                            <p id="respuesta1">
+                            <br>
+                            <p id="respuesta1" style="visibility: hidden;">
                             </p>
                         </div>
                     </div>
@@ -73,9 +79,9 @@
                         <img src="../IMG/MODULO3/ejercicio2M3.png" class="float-left mb-2">
                         <div class="mx-auto">
                             <form>
-                                <input type="radio" name="colors" id="E2_1"> <b>x-64=0</b><br>
-                                <input type="radio" name="colors" id="E2_2"> <b>x<sup><b>2</b></sup>=-64</b><br>
-                                <input type="radio" name="colors" id="E2_1"> <b>x<sup><b>2</b></sup>-64=0</b><br>
+                                <input type="radio" name="colors" id="E2_1" value="<b>x-64=0</b><br>"> <b>x-64=0</b><br>
+                                <input type="radio" name="colors" id="E2_2" value="<b>x<sup><b>2</b></sup>=-64</b><br>"> <b>x<sup><b>2</b></sup>=-64</b><br>
+                                <input type="radio" name="colors" id="E2_1" value="<b>x<sup><b>2</b></sup>-64=0</b><br>"> <b>x<sup><b>2</b></sup>-64=0</b><br>
                             </form>
                         </div>
                     </div>
@@ -140,18 +146,27 @@
         </div>
     </div>
 
-<!--
     <script>
-        function r1() {
-            var x = document.getElementById("E1_2").checked
-          if (x == true){
-              document.getElementById("respuesta1").innerHTML = "<b>Has seleccionado la respuesta correcta</b>"
-          } else{
-            document.getElementById("respuesta1").innerHTML = "<b class='text-danger'>Has seleccionado la respuesta incorrecta</b>"
-          }
+        function ejercicio1() {
+            var form1 = document.forms[0];
+            var txt = "";
+            var i;
+            for (i = 0; i < form1.length; i++) {
+                if  (form1[i].checked == form1[0].checked) {
+                    //txt = txt + form1[i].value + " ";
+                    //no se pero esto esta fumado, chequea el primero y obtiene de respuesta lo que esta en el segundo
+                    //solo diosito sabe como funciona, pero funciona de alguna forma
+                    txt = "Respuesta correcta! " + form1[1].value;
+                }
+                else{
+                    txt = "Respuesta incorrecta";
+                }
+            }
+            document.getElementById("respuesta1").style.visibility="visible";
+            document.getElementById("respuesta1").innerHTML = txt;
         }
-        </script>
-    -->
+        
+    </script>
 </body>
 
 </html>
