@@ -57,17 +57,10 @@
                         <img src="../IMG/MODULO3/ejercicio1M3.png" class="float-left mb-2">
                         <div class="mx-auto">
                             <form class="mt-5">
-                                <input type="radio" name="E1" id="E1_1" value="<b>x-25=0</b><br>"> <b>x-25=0</b><br>
-                                <input type="radio" name="E1" id="E1_2" value="<b>x<sup><b>2</b></sup>-25=0</b><br>">
-                                <b>x<sup><b>2</b></sup>-25=0</b><br>
-                                <input type="radio" name="E1" id="E1_1" value="<b>x-x-25=0</b>"> <b>x-x-25=0</b><br>
-                                <input type="button" name="btn1" id="btn1" value="Comprobar"
-                                onclick="ejercicio1()">
+                                <input type="radio" name="E1" id="E1_1"> <b>x-25=0</b><br>
+                                <input type="radio" name="E1" id="E1_2"> <b>x<sup><b>2</b></sup>-25=0</b><br>
+                                <input type="radio" name="E1" id="E1_1"> <b>x-x-25=0</b><br>
                             </form>
-                            <br>
-                            <br>
-                            <p id="respuesta1" style="visibility: hidden;">
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -79,9 +72,9 @@
                         <img src="../IMG/MODULO3/ejercicio2M3.png" class="float-left mb-2">
                         <div class="mx-auto">
                             <form>
-                                <input type="radio" name="colors" id="E2_1" value="<b>x-64=0</b><br>"> <b>x-64=0</b><br>
-                                <input type="radio" name="colors" id="E2_2" value="<b>x<sup><b>2</b></sup>=-64</b><br>"> <b>x<sup><b>2</b></sup>=-64</b><br>
-                                <input type="radio" name="colors" id="E2_1" value="<b>x<sup><b>2</b></sup>-64=0</b><br>"> <b>x<sup><b>2</b></sup>-64=0</b><br>
+                                <input type="radio" name="colors" id="E2_1"> <b>x-64=0</b><br>
+                                <input type="radio" name="colors" id="E2_2"> <b>x<sup><b>2</b></sup>=-64</b><br>
+                                <input type="radio" name="colors" id="E2_3"> <b>x<sup><b>2</b></sup>-64=0</b><br>
                             </form>
                         </div>
                     </div>
@@ -95,7 +88,7 @@
                             <form>
                                 <input type="radio" name="colors" id="E3_1"> <b>x-64=0</b><br>
                                 <input type="radio" name="colors" id="E3_2"> <b>x<sup><b>2</b></sup>=-64</b><br>
-                                <input type="radio" name="colors" id="E3_1"> <b>x<sup><b>2</b></sup>-64=0</b><br>
+                                <input type="radio" name="colors" id="E3_3"> <b>x<sup><b>2</b></sup>-64=0</b><br>
                             </form>
                         </div>
                     </div>
@@ -109,7 +102,7 @@
                             <form>
                                 <input type="radio" name="colors" id="E4_1"> <b>x-64=0</b><br>
                                 <input type="radio" name="colors" id="E4_2"> <b>x<sup><b>2</b></sup>=-64</b><br>
-                                <input type="radio" name="colors" id="E4_1"> <b>x<sup><b>2</b></sup>-64=0</b><br>
+                                <input type="radio" name="colors" id="E4_3"> <b>x<sup><b>2</b></sup>-64=0</b><br>
                             </form>
                         </div>
                     </div>
@@ -123,7 +116,7 @@
                             <form>
                                 <input type="radio" name="colors" id="E5_1"> <b>x-64=0</b><br>
                                 <input type="radio" name="colors" id="E5_2"> <b>x<sup><b>2</b></sup>=-64</b><br>
-                                <input type="radio" name="colors" id="E5_1"> <b>x<sup><b>2</b></sup>-64=0</b><br>
+                                <input type="radio" name="colors" id="E5_3"> <b>x<sup><b>2</b></sup>-64=0</b><br>
                             </form>
                         </div>
                     </div>
@@ -137,9 +130,21 @@
                             <form>
                                 <input type="radio" name="colors" id="E6_1"> <b>x-64=0</b><br>
                                 <input type="radio" name="colors" id="E6_2"> <b>x<sup><b>2</b></sup>=-64</b><br>
-                                <input type="radio" name="colors" id="E6_1"> <b>x<sup><b>2</b></sup>-64=0</b><br>
+                                <input type="radio" name="colors" id="E6_3"> <b>x<sup><b>2</b></sup>-64=0</b><br>
                             </form>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="card shadow p-3 mb-5">
+                    <div class="card-body">
+                        <p>Verificar resultados</p>
+                        <input type="button" class="btn btn-primary" name="btn1" id="btn1" value="Comprobar" onclick="ejercicio1()">
+                        <br>
+                        <br>
+                        <p id="respuesta1">
+                        </p>
                     </div>
                 </div>
             </div>
@@ -148,24 +153,53 @@
 
     <script>
         function ejercicio1() {
-            var form1 = document.forms[0];
-            var txt = "";
-            var i;
-            for (i = 0; i < form1.length; i++) {
-                if  (form1[i].checked == form1[0].checked) {
-                    //txt = txt + form1[i].value + " ";
-                    //no se pero esto esta fumado, chequea el primero y obtiene de respuesta lo que esta en el segundo
-                    //solo diosito sabe como funciona, pero funciona de alguna forma
-                    txt = "Respuesta correcta! " + form1[1].value;
-                }
-                else{
-                    txt = "Respuesta incorrecta";
-                }
+            var cont = 0;
+            if (document.getElementById("E1_2").checked == true){
+                cont++;
             }
-            document.getElementById("respuesta1").style.visibility="visible";
+            if (document.getElementById("E2_3").checked == true){
+                cont++;
+            }
+            if (document.getElementById("E3_3").checked == true){
+                cont++;
+            }
+            if (document.getElementById("E4_1").checked == true){
+                cont++;
+            }
+            if (document.getElementById("E5_3").checked == true){
+                cont++;
+            }
+            if (document.getElementById("E6_2").checked == true){
+                cont++;
+            }
+
+            // ahora si xdxd
+            //contamos solamente los valores buenos, para luego traducirlo en una nota
+            valorp = 10 / 6;
+            puntos = valorp * cont;
+            var txt = "Has obtenido un total de " + puntos.toFixed(2) + " puntos de 10.";
             document.getElementById("respuesta1").innerHTML = txt;
         }
-        
+            /*
+        var form1 = document.forms[0];
+        var txt = "";
+        var i;
+        for (i = 0; i < form1.length; i++) {
+            if  (form1[i].checked == form1[0].checked) {
+                //txt = txt + form1[i].value + " ";
+                //no se pero esto esta fumado, chequea el primero y obtiene de respuesta lo que esta en el segundo
+                //solo diosito sabe como funciona, pero funciona de alguna forma
+                txt = "Respuesta correcta! " + form1[1].value;
+            }
+            else{
+                txt = "Respuesta incorrecta";
+            }
+        }
+        document.getElementById("respuesta1").style.visibility="visible";
+        document.getElementById("respuesta1").innerHTML = txt;
+    }
+    */
+    
     </script>
 </body>
 
