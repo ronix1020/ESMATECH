@@ -110,6 +110,34 @@ body{
 .modal-backdrop{
     position: relative; 
 }
-  
+#exampleModalLabel, #contenidoModal{
+    color: black;
+}
+#cajaContenido{
+    background: white;
+}
+#imageCont{
+    height: 300px;
+    width: 100px;
+}
+#cardCont{
+    margin-left: 20px;
+    width: 700px;
+}
+#alert2{
+    background: #d8f6ff;
+}
+#letraC{
+    margin-left: -40px;
+    margin-top: -230px;
+}
+#letraP{
+    margin-left: -55px;
+    margin-top: -45px;
+}
+#letrac{
+    margin-left: -60px;
+    margin-top: -20px;
+}
 
 
