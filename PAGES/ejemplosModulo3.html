@@ -46,9 +46,14 @@
                     <div class="card-body mx-auto">
                         <img src="../IMG/MODULO3/ejercicio1M3.png" class="float-left mb-2">
                         <div class="mx-auto">
-                            <input type="radio" name="colors" id="E1_1"> <b>x-25=0</b><br>
-                            <input type="radio" name="colors" id="E1_2"> <b>x<sup><b>2</b></sup>-25=0</b><br>
-                            <input type="radio" name="colors" id="E1_1"> <b>x-x-25=0</b>
+                            <form>
+                                <input onclick="r1" type="radio" name="colors" id="E1_1"> <b>x-25=0</b><br>
+                                <input onclick="r1" type="radio" name="colors" id="E1_2"> <b>x<sup><b>2</b></sup>-25=0</b><br>
+                                <input onchange="r1" type="radio" name="colors" id="E1_1"> <b>x-x-25=0</b>
+                            </form>
+                            <br>
+                            <p id="respuesta1">
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -59,15 +64,30 @@
                     <div class="card-body mx-auto">
                         <img src="../IMG/MODULO3/ejercicio2M3.png" class="float-left mb-2">
                         <div class="mx-auto">
-                            <input type="radio" name="colors" id="E1_1"> <b>x-64=0</b><br>
-                            <input type="radio" name="colors" id="E1_2"> <b>x<sup><b>2</b></sup>=-64</b><br>
-                            <input type="radio" name="colors" id="E1_1"> <b>x<sup><b>2</b></sup>-64=0</b><br>
+                            <form>
+                                <input type="radio" name="colors" id="E2_1"> <b>x-64=0</b><br>
+                                <input type="radio" name="colors" id="E2_2"> <b>x<sup><b>2</b></sup>=-64</b><br>
+                                <input type="radio" name="colors" id="E2_1"> <b>x<sup><b>2</b></sup>-64=0</b><br>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+<!--
+    <script>
+        function r1() {
+            var x = document.getElementById("E1_2").checked
+          if (x == true){
+              document.getElementById("respuesta1").innerHTML = "<b>Has seleccionado la respuesta correcta</b>"
+          } else{
+            document.getElementById("respuesta1").innerHTML = "<b class='text-danger'>Has seleccionado la respuesta incorrecta</b>"
+          }
+        }
+        </script>
+    -->
 </body>
 
 </html>
