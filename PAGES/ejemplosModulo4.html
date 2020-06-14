@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecuacion Cuadratica</title>
+    <title>Ejercicios Función Cuadrática</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script>
-        window.onbeforeunload = function () {
-            return "¿Desea recargar la página web?";
-        };
+        //window.onbeforeunload = function () {
+        //    return "¿Desea recargar la página web?";
+        //};
     </script>
 
 </head>
@@ -49,192 +49,225 @@
         </nav>
 
         <div class="row bg-light rounded">
-            <p class="m-4">
-                Encuentra la ecuación que determina la longitud desconocida en cada figura y selecciona la
-                respuesta correcta.
-                <br>
-                Ten en cuenta que en el caso de los triángulos puedes obtener las respuestas utilizando la fórmula para
-                el área del triángulo:
-                <img src="../IMG/MODULO3/formTriangulo.png" class="mx-auto m-2">
-            </p>
             <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5" id="ejer1">
+                <div class="card shadow mb-5 mt-5" id="ejer1">
                     <div class="card-body mx-auto">
-                        <img src="../IMG/MODULO3/ejercicio1M3.png" class="float-left mb-2">
-                        <div class="mx-auto">
-                            <form class="mt-5">
-                                <input type="radio" name="E1" id="E1_1"> <b>x-25=0</b><br>
-                                <input type="radio" name="E1" id="E1_2"> <b>x<sup><b>2</b></sup>-25=0</b><br>
-                                <input type="radio" name="E1" id="E1_1"> <b>x-x-25=0</b><br>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- EASY-->
-            <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5" id="ejer2">
-                    <div class="card-body mx-auto">
-                        <img src="../IMG/MODULO3/ejercicio2M3.png" class="float-left mb-2">
-                        <div class="mx-auto">
-                            <form>
-                                <input type="radio" name="colors" id="E2_1"> <b>x-64=0</b><br>
-                                <input type="radio" name="colors" id="E2_2"> <b>x<sup><b>2</b></sup>=-64</b><br>
-                                <input type="radio" name="colors" id="E2_3"> <b>x<sup><b>2</b></sup>-64=0</b><br>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5" id="ejer3">
-                    <div class="card-body mx-auto">
-                        <img src="../IMG/MODULO3/ejercicio3M3.png" class="float-left mb-2">
-                        <div class="mx-auto">
-                            <form>
-                                <input type="radio" name="colors" id="E3_1"> <b>5x<sup><b>2</b></sup>-3=10</b><br>
-                                <input type="radio" name="colors" id="E3_2"> <b>5x-3=10</b><br>
-                                <input type="radio" name="colors" id="E3_3"> <b>5(x-3)=10</b><br>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5" id="ejer4">
-                    <div class="card-body mx-auto">
-                        <img src="../IMG/MODULO3/ejercicio4M3.png" class="float-left mb-2">
-                        <div class="mx-auto">
-                            <form>
-                                <input type="radio" name="colors" id="E4_1"> <b>2x-6=0</b><br>
-                                <input type="radio" name="colors" id="E4_2"> <b>x-2=6</b><br>
-                                <input type="radio" name="colors" id="E4_3"> <b>x<sup><b>2</b></sup>-4=0</b><br>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5" id="ejer5">
-                    <div class="card-body mx-auto">
-                        <img src="../IMG/MODULO3/ejercicio5M3.png" class="float-left mb-2">
-                        <div class="mx-auto">
-                            <form>
-                                <input type="radio" name="colors" id="E5_1"> <b>x<sup><b>2</b></sup>-16x=6</b><br>
-                                <input type="radio" name="colors" id="E5_2"> <b>x<sup><b>2</b></sup>-10x=0</b><br>
-                                <input type="radio" name="colors" id="E5_3"> <b>x<sup><b>2</b></sup>-6x=16</b><br>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5" id="ejer6">
-                    <div class="card-body mx-auto">
-                        <img src="../IMG/MODULO3/ejercicio6M3.png" class="float-left mb-2">
-                        <div class="mx-auto">
-                            <form>
-                                <input type="radio" name="colors" id="E6_1"> <b>6x-3=0</b><br>
-                                <input type="radio" name="colors" id="E6_2"> <b>3x-6=0</b><br>
-                                <input type="radio" name="colors" id="E6_3"> <b>x<sup><b>3</b></sup>-6=0</b><br>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="card shadow p-3 mb-5">
-                    <div class="card-body">
-                        <p>Verificar resultados</p>
-                        <input type="button" class="btn btn-primary" name="btn1" id="btn1" value="Comprobar"
-                            onclick="ejercicio1()">
-                        <br>
-                        <br>
-                        <p id="respuesta1">
+                        <p class="m-4">
+                            El área del cuadrado es directamente proporcional al cuadrado de su diagonal, donde <i>a =
+                                <sup>1</sup>&frasl;<sub>2</sub></i>.
+                            <br>
+                            a) Completa los valores para el área en la siguiente tabla, donde <i>x</i> representa la
+                            diagonal del cuadrado
+                            (en cm) y <i>y</i> es el área (en cm<sup>2</sup>) del mismo:
+                        <table class="table table-bordered mx-auto">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><i>x</i></th>
+                                    <th scope="col">0</th>
+                                    <th scope="col">1</th>
+                                    <th scope="col">2</th>
+                                    <th scope="col">3</th>
+                                    <th scope="col">4</th>
+                                    <th scope="col">5</th>
+                                    <th scope="col">6</th>
+                                    <th scope="col">7</th>
+                                    <th scope="col">8</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><i>x<sup>2</sup></i></th>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>9</td>
+                                    <td>16</td>
+                                    <td>25</td>
+                                    <td>36</td>
+                                    <td>49</td>
+                                    <td>64</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i>y</i></th>
+                                    <td>0</td>
+                                    <td>0.5</td>
+                                    <td>2</td>
+                                    <td>4.5</td>
+                                    <div id="zonasDeSoltar">
+                                        <td class="zona-de-soltar" id="R1"></td>
+                                        <td class="zona-de-soltar" id="R2"></td>
+                                        <td class="zona-de-soltar" id="R3"></td>
+                                        <td class="zona-de-soltar" id="R4"></td>
+                                        <td class="zona-de-soltar" id="R5"></td>
+                                    </div>
+                                </tr>
+                            </tbody>
+                        </table>
                         </p>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Arrastra los numeros correctos hasta la casilla correcta:
+                        </p>
+                        <div id="arrastrables">
+                            <div class="arrastrable" id="E1R4" draggable="true">
+                                <label>24.5</label>
+                            </div>
+
+                            <div class="arrastrable" id="E1RR" draggable="true">
+                                <label>25</label>
+                            </div>
+
+                            <div class="arrastrable" id="E1R1" draggable="true">
+                                <label>8</label>
+                            </div>
+
+                            <div class="arrastrable" id="E1R5" draggable="true">
+                                <label>32</label>
+                            </div>
+                            <div class="arrastrable" id="E1RR" draggable="true">
+                                <label>12</label>
+                            </div>
+                            <div class="arrastrable" id="E1R2" draggable="true">
+                                <label>12.5</label>
+                            </div>
+                            <div class="arrastrable" id="E1RR" draggable="true">
+                                <label>19</label>
+                            </div>
+                            <div class="arrastrable" id="E1R3" draggable="true">
+                                <label>18</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- EASY-->
+                <div class="col-sm-12">
+                    <div class="card shadow p-3 mb-5" id="ejer2">
+                        <div class="card-body mx-auto">
+                            <img src="" class="float-left mb-2 p-5">
+                            <div class="mx-auto">
+                                <form>
+                                    <input type="radio" name="colors" id="E2_1"> <b>x-64=0</b><br>
+                                    <input type="radio" name="colors" id="E2_2"> <b>x<sup><b>2</b></sup>=-64</b><br>
+                                    <input type="radio" name="colors" id="E2_3"> <b>x<sup><b>2</b></sup>-64=0</b><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="card shadow p-3 mb-5">
+                        <div class="card-body">
+                            <p>Verificar resultados</p>
+                            <input type="button" class="btn btn-primary" name="btn1" id="btn1" value="Comprobar"
+                                onclick="ejercicio1()">
+                            <br>
+                            <br>
+                            <p id="respuesta1">
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script>
-        function ejercicio1() {
-            var cont = 0;
-            var e1 = false;
-            var e2 = false;
-            var e3 = false;
-            var e4 = false;
-            var e5 = false;
-            var e6 = false;
+        <script>
+            var elementoArrastrado;
+            document.addEventListener("drag", function (event) {
+                //console.log("drag")
+            }, false);
 
-            if (document.getElementById("E1_2").checked == true) {
-                cont++;
-                e1 = true;
-            }
-            if (document.getElementById("E2_3").checked == true) {
-                cont++;
-                e2 = true;
-            }
-            if (document.getElementById("E3_3").checked == true) {
-                cont++;
-                e3 = true;
-            }
-            if (document.getElementById("E4_1").checked == true) {
-                cont++;
-                e4 = true;
-            }
-            if (document.getElementById("E5_3").checked == true) {
-                cont++;
-                e5 = true;
-            }
-            if (document.getElementById("E6_2").checked == true) {
-                cont++;
-                e6 = true;
+
+            document.addEventListener("dragstart", function (event) {
+                // guarda información acerca del objeto arrastrado
+                event.dataTransfer.setData('text/plain', null)
+                // guarda una referéncia del elemento arrastrado
+                elementoArrastrado = event.target;
+                // cambia la opacidad del elemento a medio transparente
+                event.target.style.opacity = .5;
+            }, false);
+
+
+            document.addEventListener("dragend", function (event) {
+                // reestablece el valor de la opacidad
+                event.target.style.opacity = 1;
+            }, false);
+
+
+            document.addEventListener("dragover", function (event) {
+                // previene el comportamiento por defecto del elemento arrastrado
+                event.preventDefault();
+            }, false);
+
+            document.addEventListener("dragenter", function (event) {
+                // comprueba si el event.target es una zona de soltar  
+                if (event.target.className == "zona-de-soltar") {
+                    // y di lo és cambia el color de fondo
+                    event.target.style.background = "purple";
+                }
+
+            }, false);
+
+            document.addEventListener("dragleave", function (event) {
+                // comprueba si el event.target es una zona de soltar  
+                if (event.target.className == "zona-de-soltar") {
+                    // y si lo és, reestablece el valor inicial
+                    event.target.style.background = "";
+                }
+            }, false);
+
+            document.addEventListener("drop", function (event) {
+                // Si el elemento arrastrado es un link, este se abre en una nueve página.
+                // Para que esto no pase hay que utilizar: 
+                event.preventDefault();
+                // comprueba si el event.target es una zona de soltar
+                if (event.target.className == "zona-de-soltar") {
+                    // reestablece el valor inicial para el background
+                    event.target.style.background = "";
+                    // elimina el elemento arrastrado del del elemento padre
+                    elementoArrastrado.parentNode.removeChild(elementoArrastrado);
+                    // y lo agrega al elemento de destino
+                    event.target.appendChild(elementoArrastrado);
+                }
+
+            }, false);
+
+            function ejercicio1() {
+                var cont = 0;
+                //primero obtenemos los id de las celdas donde estan alojados las respuestas
+                var r1 = document.getElementById("R1").outerText;
+                var r2 = document.getElementById("R2").outerText;
+                var r3 = document.getElementById("R3").outerText;
+                var r4 = document.getElementById("R4").outerText;
+                var r5 = document.getElementById("R5").outerText;
+                //console.log(r1);
+                //verificamos si tiene las respuestas correctas
+                if (r1 == "8") {
+                    console.log("Has respondido bien la 1");
+                    cont++;
+                }
+                if (r2 == "12.5") {
+                    console.log("Has respondido bien la 2");
+                    cont++;
+                }
+                if (r3 == "18") {
+                    console.log("Has respondido bien la 3");
+                    cont++;
+                }
+                if (r4 == "24.5") {
+                    console.log("Has respondido bien la 4");
+                    cont++;
+                }
+                if (r5 == "32") {
+                    console.log("Has respondido bien la 5");
+                    cont++;
+                }
+                console.log("puntos obtenidos" + cont)
+                //publicamos los resultados
+                document.getElementById("respuesta1").innerHTML = "Tus puntos obtenidos son " + cont;
             }
 
-            // ahora si xdxd
-            //contamos solamente los valores buenos, para luego traducirlo en una nota
-            valorp = 10 / 6;
-            puntos = valorp * cont;
-            var txt = "Has obtenido un total de " + puntos.toFixed(2) + " puntos de 10.";
-            //modificacion de las clases
-            if (e1 == false) {
-                document.getElementById("ejer1").className += " bg-danger";
-            } else {
-                document.getElementById("ejer1").className += " bg-success";
-            }
-            if (e2 == false) {
-                document.getElementById("ejer2").className += " bg-danger";
-            } else {
-                document.getElementById("ejer2").className += " bg-success";
-            }
-            if (e3 == false) {
-                document.getElementById("ejer3").className += " bg-danger";
-            } else {
-                document.getElementById("ejer3").className += " bg-success";
-            }
-            if (e4 == false) {
-                document.getElementById("ejer4").className += " bg-danger";
-            } else {
-                document.getElementById("ejer4").className += " bg-success";
-            }
-            if (e5 == false) {
-                document.getElementById("ejer5").className += " bg-danger";
-            } else {
-                document.getElementById("ejer5").className += " bg-success";
-            }
-            if (e6 == false) {
-                document.getElementById("ejer6").className += " bg-danger";
-            } else {
-                document.getElementById("ejer6").className += " bg-success";
-            }
-            //agregamos el puntaje final
-            document.getElementById("respuesta1").innerHTML = txt;
-            document.getElementById("btn1").disabled = true;
-
-        }
-    </script>
+        </script>
 </body>
 
 </html>
