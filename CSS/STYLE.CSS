@@ -2,7 +2,7 @@
 #zonasDeSoltar, #arrastrables{display:flex;}  
 #arrastrables div{margin:10px 17px 0 10px;}
 .arrastrable {
-    flex:0 0 75px;
+    flex:0 0 60px;
     height: 40px;
     color: white;
     text-align: center;
