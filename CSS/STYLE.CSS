@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+#zonasDeSoltar, #arrastrables{display:flex;}  
+#arrastrables div{margin:10px 17px 0 10px;}
+.arrastrable {
+    flex:0 0 75px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    background: #0273A8;
+    border:1px solid;
+ 
+  }
 
+  .zona-de-soltar {
+    flex:0 0 100px;
+    height: 50px;
+    background: #009D7A;
+    padding: 10px;
+    margin:10px 10px 0 0 ;
+  }
+  .zona-de-soltar.over{
+     border: 2px dashed #000;
+  }
 .gradient-font {
     font-size: 100px;
     background: -webkit-linear-gradient(#0273A8, #009D7A);
