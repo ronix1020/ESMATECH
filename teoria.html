@@ -12,7 +12,7 @@
     <title>Modulo 1</title>
 </head>
 <body>
-    <div class="container ">
+    <div class="container">
         <div class="row text-justify p-3 mb-5 shadow rounded" id="roowTeoria">
             <nav class="navbar navbar-expand-lg navbar-dark rounded" id="nav">
                 <a class="navbar-brand" href="index.html">Pagina principal</a>
@@ -29,13 +29,13 @@
             <div class="col-lg-12 " id="image">
                 <img src="img/modulo1/mate.png" alt="">
             </div>
-            <div class="col-lg-10" id="tema1">
-                <h1><strong>Desarrollo del contenido</strong></h1>
+            <div class="col-lg-12" id="ContenidoTemas">
+                <h1 id="tema1"><strong>Desarrollo del contenido</strong></h1>
                 <br>
                 <ul>
                     <div class="box ">
                         <div class="content">
-                            <div class="col-lg-12" id="tema2">
+                            <div class="col-lg-12" id="temas">
                                 <div class="col-lg-12" id="imgBinomio">
                                     <h3><strong>"1.1 Multiplicaci&oacuten de monomio por binomio"</strong></h3>
                                     <br>
@@ -46,51 +46,47 @@
                                     <H4 class="cont"><img src="img/modulo1/c-removebg-preview.png" id="letrac" alt=""> El producto de un monomio por un binomio, el primero se multiplica por cada uno de los términos
                                         del segundo, teniendo en cuenta la ley de los signos. Por ejemplo:</H4>
                                     <img style="margin-left: 190px;" src="img/modulo1/binomio.PNG" alt="">
-                                    <br>
-                                    <br>
                                 </div>
-                                <button type="button" style="margin-left: 280px;" class="btn btn-info" focus="true" data-toggle="modal" data-target="#ModalTema1">
+                                <button type="button" id="btnTema1" class="btn btn-info" focus="true" data-toggle="modal" data-target="#ModalTema1">
                                     Ejercicios de practica
                                 </button>
-                                <br>
-                                <br>
                             </div>  
                         </div>
                     </div>
-                    <br>
-                    <br>
                     <!-- Tema dos -->
-                    <div class="box ">
+                    <div class="box">
                         <div class="content">
-                            <div class="col-lg-12" id="tema2">
+                            <div class="col-lg-12" id="temas">
                                 <div class="col-lg-12" id="imgBinomio">
                                     <h3><strong>"1.2 Binomio por binomio, parte 1"</strong></h3>
                                     <br>
-                                    <H4 class="cont">
-                                        <img src="img/modulo1/p-removebg-preview.png" id="letraP" alt=""> Encuentra de dos formas diferentes el área del rectángulo formado 
-                                        por las siguientes piezas.
-                                        <br>
-                                        Existen dos formas para encontrar el area de rectangulo.
-                                    </H4>
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="card"  id="cardCont">
-                                                <h5 id="contenidoModal">&nbsp; <strong>Primera forma</strong></h5>
+                                                <p>
+                                                    <img src="img/modulo1/p-removebg-preview.png" id="letraPTema2" alt="">
+                                                    <div class="col-md-12">
+                                                        <p id="contTema2">Encuentra de dos formas diferentes el área del rectángulo formado por las siguientes piezas. <br> <br>
+                                                            Existen dos formas para encontrar el area de rectangulo.
+                                                        </p> 
+                                                    </div>
+                                                </p> 
+                                                <p id="contenidoModal">&nbsp; <strong>Primera forma</strong></p>
                                                 <br>
                                                 <img src="img/modulo1/rectangulo.PNG"style="width: 300px; margin-left:110px" class="card-img-top" alt="">
                                                 <div class="card-body">
-                                                    <h5 class="card-text" id="contenidoModal">La altura del rectángulo es y + 1 y su base es x + 1. <br> Entonces, el área buscada es el producto:
+                                                    <p class="card-text" id="contenidoModal">La altura del rectángulo es y + 1 y su base es x + 1. <br> Entonces, el área buscada es el producto:
                                                     (x + 1)(y + 1).</h5>
-                                                    <h5 id="contenidoModal">&nbsp;<strong>Segunda forma</strong></h5>
-                                                    <h5 id="contenidoModal">Dividiendo el rectángulo en piezas y obteniendo sus áreas respectivas:<br></h5>
+                                                    <p id="contenidoModal">&nbsp;<strong>Segunda forma</strong></p>
+                                                    <p id="contenidoModal">Dividiendo el rectángulo en piezas y obteniendo sus áreas respectivas:<br></p>
                                                     <img src="img/modulo1/2forma.PNG" style="width: 400px; margin-left:110px" class="card-img-top" alt="">
-                                                    <h5 class="card-text" id="contenidoModal">
+                                                    <p class="card-text" id="contenidoModal">
                                                         La suma de las áreas de cada pieza es:
                                                         xy + x + y + 1.
                                                         <br>
                                                         Por tanto, el área del rectángulo también es:
                                                         xy + x + y + 1.    
-                                                    </h5>
+                                                    </p>
                                                     <br>
                                                     <div class="alert alert-danger col-md-9" id="alert" role="alert">
                                                         Al polinomio formado por dos términos se le llama: <strong>binomio</strong>.
@@ -101,11 +97,11 @@
                                                         <img src="img/modulo1/c-removebg-preview.png" id="letraC">
                                                         <img src="img/modulo1/polinomio.PNG" style="width: 300px;"alt="">
                                                         <br>
-                                                        <h5>
+                                                        <p>
                                                             En el producto de un binomio por otro binomio se multiplican cada uno
                                                             de los términos del primero por cada uno de los términos del segundo,
                                                             teniendo en cuenta la ley de los signos.
-                                                        </h5>  
+                                                        </p>  
                                                         <img src="img/modulo1/formula.PNG" style="margin-left: 60px;"alt=""><br>
                                                     </div>
                                                 </div>
@@ -114,16 +110,76 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="button" style="margin-left: 280px;" class="btn btn-info" focus="true" data-toggle="modal" data-target="#modalTema2">
+                                <button type="button" id="btnTema2" class="btn btn-info" focus="true" data-toggle="modal" data-target="#modalTema2">
                                     Ejercicios de practica
                                 </button>
-                                <br>
-                                <br>
                             </div>  
                         </div>
                     </div>
-                    
-                    <h3>"1.3 Binomio por binomio, parte 2"</h3>
+                    <!-- Tema tres -->
+                    <div class="box ">
+                        <div class="content">
+                            <div class="col-lg-12" id="temas">
+                                <div class="col-lg-12" >
+                                    <h3><strong>"1.2 Binomio por binomio, parte 2"</strong></h3>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card"  id="cardCont">
+                                                <H4 class="cont" id="subtema3">
+                                                    <img src="img/modulo1/p-removebg-preview.png" id="letraPTema3" alt=""> 
+                                                    Desarrolla el producto: (2x-1)(y+3).
+                                                </H4> 
+                                                <div class="col-lg-12" >
+                                                    <div class="alert alert-success" role="alert" id="alertTema3">
+                                                        La resta <strong>a − b</strong> puede escribirse como una suma: <br> <strong>− b = a + (−b)</strong> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12" >
+                                                    <div class="alert alert-light" role="alert" id="alertProcedimiento">
+                                                        <img src="img/modulo1/S-removebg-preview.png" id="imgStema3" alt="">
+                                                        Se debe tener en cuenta el signo (−) del primer binomio. El producto puede desarrollarse de las siguientes formas:
+                                                        <br>
+                                                        <br>
+                                                        1. Se escribe 2x − 1 como una suma: 2x + (−1). El producto se desarrolla como en la clase anterior:
+                                                        <br>
+                                                        <p id="formulaTema3">
+                                                            (2x − 1)(y + 3) = [2x + (−1)](y + 3)
+                                                            <br>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            &nbsp;&nbsp;&nbsp;= 2x(y) + 2x(3) + (−1)(y) + (−1)(3)
+                                                            <br>
+                                                            = 2xy + 6x + (–y) + (−3)
+                                                            <br>
+                                                            = 2xy + 6x – y − 3
+                                                            <br>
+                                                            <img src="img/modulo1/formulaTema3.PNG"  id="imgFormulaTema3" alt="">
+                                                        </p>
+                                                        2. Se toma y + 3 = w y se desarrolla como el producto de un binomio por un monomio:
+                                                        <br>
+                                                        <p id="formula2Tema3">
+                                                            (2x − 1)(y + 3) = 2x(w) − 1(w) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Tomando w = y + 3,</strong> 
+                                                            <br>
+                                                            = 2x(y + 3) − (y + 3) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sustituyendo nuevamente y + 3 = w,
+                                                            <br>
+                                                            = 2xy + 6x − y − 3.
+                                                            <br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" id="btnTema3" class="btn btn-info" focus="true" data-toggle="modal" data-target="#modalTema2">
+                                    Ejercicios de practica
+                                </button>
+                            </div>  
+                        </div>
+                    </div>
                     <h3>"1.4 Binomio pot trinomio"</h3>
                     <h3>"1.5 Trinomio por trinomio"</h3>
                     <h3>"1.5 Trinomio por trinomio"</h3>

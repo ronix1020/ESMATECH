@@ -16,6 +16,9 @@ body{
     justify-content:center;
     align-items: center;
     border: 1px solid #000; 
+    margin-top: 20px;
+    margin-left: -30px;
+    
 }
 .container .box::before{
     content: '';
@@ -101,7 +104,7 @@ body{
 #teoria{ 
     color: rgb(199, 218, 199);
 }
-#tema2{
+#temas{
     color: lightblue;
 }
 #tema1{
@@ -121,8 +124,7 @@ body{
     width: 100px;
 }
 #cardCont{
-    margin-left: 20px;
-    width: 700px;
+    width: 100%;
 }
 #alert2{
     background: #d8f6ff;
@@ -131,13 +133,64 @@ body{
     margin-left: -40px;
     margin-top: -230px;
 }
-#letraP{
-    margin-left: -55px;
-    margin-top: -45px;
-}
+
 #letrac{
     margin-left: -60px;
     margin-top: -20px;
 }
 
-
+#alertTema3{
+    margin-left: 370px;
+    margin-top: 10px;
+}
+#alertProcedimiento{
+    border: purple;
+    margin-left: 25px;
+    border-style: solid;
+    color:  black;
+}
+#imgStema3{
+    margin-left: -50px;
+    margin-top: -50px;
+}
+#formulaTema3{
+    margin-left: 125px;
+}
+#imgFormulaTema3{
+    margin-left: 250px;
+    margin-top: -50px;
+    width: 150px;
+}
+#formula2Tema3{
+    margin-left: 120px;
+}
+#subtema3{
+    color: black;
+    font-size: 16px;
+}
+#subtema2{
+    color: black;
+}
+#letraPTema2{
+    width: 80PX;
+}
+#contTema2{
+    color: black;
+    margin-left: 90px;
+    margin-top: -70px;
+}
+#btnTema1{
+    margin-left: 350px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#btnTema2{
+    margin-left: 350px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#btnTema3{
+    margin-left: 350px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
