@@ -142,7 +142,7 @@
                             <b>b)</b> Selecciona la respuesta correcta al enunciado siguiente:
                             <i>"<b>y</b> (el área) en términos de <b>x</b> (su diagonal)"</i>
                         </p>
-                        <div class="mx-auto">
+                        <div class="mx-auto" id="RB11">
                             <form>
                                 <input type="radio" name="E1M4" id="E1_1"> <b><i>y=<sup>1</sup>&frasl;2
                                         x<sup><b>2</b></sup></i></b><br>
@@ -163,7 +163,7 @@
                             <p>
                                 <b>a)</b> ¿Cuál es el valor de la constante?
                             </p>
-                            <div class="mx-auto">
+                            <div class="mx-auto" id="RB22">
                                 <form>
                                     <input type="radio" name="E2M4" id="E2_1"> <b><i>r<sup><b>2</b></sup></i></b><br>
                                     <input type="radio" name="E2M4" id="E2_2"> <b><i>&#928;</i></b><br>
@@ -174,7 +174,7 @@
                                 <b>b)</b> Si <b>x</b> representa el radio del círculo y <b>y</b> 
                                 su área, marca la respuesta correcta teniendo en cuenta que <b>y</b> está escrita en términos de <b>x</b>.
                             </p>
-                            <div class="mx-auto">
+                            <div class="mx-auto" id="RB33">
                                 <form>
                                     <input type="radio" name="E3M4" id="E3_1"> <b><i>y=&#928;x<sup><b>2</b></sup></i></b><br>
                                     <input type="radio" name="E3M4" id="E3_2"> <b><i>x=&#928;y<sup><b>2</b></sup></i></b><br>
@@ -373,65 +373,155 @@
                 var rr6 = document.getElementById("RR6").outerText;
                 var rr7 = document.getElementById("RR7").outerText;
                 var rr8 = document.getElementById("RR8").outerText;
+
+                var rb11 = document.getElementById("E1_1").checked;
+                var rb12 = document.getElementById("E1_2").checked;
+                var rb13 = document.getElementById("E1_3").checked;
+
+                var rb21 = document.getElementById("E2_1").checked;
+                var rb22 = document.getElementById("E2_2").checked;
+                var rb23 = document.getElementById("E2_3").checked;
+
+                var rb31 = document.getElementById("E3_1").checked;
+                var rb32 = document.getElementById("E3_2").checked;
+                var rb33 = document.getElementById("E3_3").checked; 
                 //console.log(r1);
                 //verificamos si tiene las respuestas correctas
                 if (r1 == "8") {
                     console.log("Has respondido bien la 1");
                     cont = cont + 0.6;
+                    document.getElementById("R1").className += " bg-success";
+                }
+                else{
+                    document.getElementById("R1").className += " bg-danger";
                 }
                 if (r2 == "12.5") {
                     console.log("Has respondido bien la 2");
                     cont = cont + 0.6;
+                    document.getElementById("R2").className += " bg-success";
+                }
+                else{
+                    document.getElementById("R2").className += " bg-danger";
                 }
                 if (r3 == "18") {
                     console.log("Has respondido bien la 3");
                     cont = cont + 0.6;
+                    document.getElementById("R3").className += " bg-success";
+                }
+                else{
+                    document.getElementById("R3").className += " bg-danger";
                 }
                 if (r4 == "24.5") {
                     console.log("Has respondido bien la 4");
                     cont = cont + 0.6;
+                    document.getElementById("R4").className += " bg-success";
+                }
+                else{
+                    document.getElementById("R4").className += " bg-danger";
                 }
                 if (r5 == "32") {
                     console.log("Has respondido bien la 5");
                     cont = cont + 0.6;
+                    document.getElementById("R5").className += " bg-success";
+                }
+                else{
+                    document.getElementById("R5").className += " bg-danger";
                 }
 
                 //SEGUNDA PARTE
                 if (rr1 == "1") {
                     console.log("Has respondido bien la 1 de la 2");
-                    cont = cont + 0.625;
+                    cont = cont + 0.5;
+                    document.getElementById("RR1").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR1").className += " bg-danger";
                 }
                 if (rr2 == "4Π") {
                     console.log("Has respondido bien la 2 de la 2");
-                    cont = cont + 0.625;
+                    cont = cont + 0.5;
+                    document.getElementById("RR2").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR2").className += " bg-danger";
                 }
                 if (rr3 == "9Π") {
                     console.log("Has respondido bien la 3 de la 2");
-                    cont = cont + 0.625;
+                    cont = cont + 0.5;
+                    document.getElementById("RR3").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR3").className += " bg-danger";
                 }
                 if (rr4 == "16Π") {
                     console.log("Has respondido bien la 4 de la 2");
-                    cont = cont + 0.625;
+                    cont = cont + 0.5;
+                    document.getElementById("RR4").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR4").className += " bg-danger";
                 }
                 if (rr5 == "25Π") {
                     console.log("Has respondido bien la 5 de la 2");
-                    cont = cont + 0.625;
+                    cont = cont + 0.5;
+                    document.getElementById("RR5").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR5").className += " bg-danger";
                 }
                 if (rr6 == "36Π") {
                     console.log("Has respondido bien la 6 de la 2");
-                    cont = cont + 0.625;
+                    cont = cont + 0.5;
+                    document.getElementById("RR6").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR6").className += " bg-danger";
                 }
                 if (rr7 == "49Π") {
                     console.log("Has respondido bien la 7 de la 2");
-                    cont = cont + 0.625;
+                    cont = cont + 0.5;
+                    document.getElementById("RR7").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR7").className += " bg-danger";
                 }
                 if (rr8 == "64Π") {
                     console.log("Has respondido bien la 8 de la 2");
-                    cont = cont + 0.625;
+                    cont = cont + 0.5;
+                    document.getElementById("RR8").className += " bg-success";
                 }
+                else{
+                    document.getElementById("RR8").className += " bg-danger";
+                }
+
                 console.log("puntos obtenidos PRIMERA PARTE" + cont)
+
+                //radiobuttons
+                if (rb11 == true){
+                    cont = cont + 1;
+                    document.getElementById("RB11").className += " bg-success"; 
+                }
+                else{
+                    document.getElementById("RB11").className += " bg-danger";
+                }
+                if(rb22 == true){
+                    cont = cont + 1;
+                    document.getElementById("RB22").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RB22").className += " bg-danger";
+                }
+                if(rb31 == true){
+                    cont = cont + 1;
+                    document.getElementById("RB33").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RB33").className += " bg-danger";
+                }
+
+                console.log("puntos obtenidos SEGUNDA PARTE" + cont)
                 //publicamos los resultados
-                document.getElementById("respuesta1").innerHTML = "Tus puntos obtenidos son " + cont;
+                document.getElementById("respuesta1").innerHTML = "Tus puntos obtenidos son <b>" + cont + "</b>";
             }
 
         </script>
