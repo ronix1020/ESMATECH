@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuacion Cuadratica</title>
+    <link rel="stylesheet" href="../../css/STYLE_M3.CSS">
+    <link rel="stylesheet" href="../../css/all.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script>
+        window.onbeforeunload = function () {
+            return "¿Desea recargar la página web?";
+        };
+    </script>
+
+</head>
+
+<body class="bg-dark">
+    <div class="container mb-4">
+        <!-- BARRA NAVEGACION -->
+        <nav class="navbar navbar-expand-lg navbar navbar-dark d-flex bg-dark shadow p-3 mb-5 bg-dark rounded">
+            <a class="navbar-brand gradient-font" href="../../index.html">
+                <h4><b>ESMATECH</b></h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link pl-4 pr-4" style="color: #009D7A;" href="../../index.html"><i
+                                class="fas fa-home pr-2"></i><b>Inicio</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-4 pr-4" style="color: #009D7A;" href="ecuacionCuadratica.html"><i
+                                class="fas fa-star pr-2"></i><b>Teoría de este contenido</b></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row bg-light rounded">
+            <p class="m-4">
+                Encuentra la ecuación que determina la longitud desconocida en cada figura y selecciona la
+                respuesta correcta.
+                <br>
+                Ten en cuenta que en el caso de los triángulos puedes obtener las respuestas utilizando la fórmula para
+                el área del triángulo:
+                <img src="../../IMG/MODULO3/formTriangulo.png" class="mx-auto m-2">
+            </p>
+            <div class="col-sm-12">
+                <div class="card shadow p-3 mb-5" id="ejer1">
+                    <div class="card-body mx-auto">
+                        <img src="../../IMG/MODULO3/ejercicio1M3.png" class="float-left mb-2">
+                        <div class="mx-auto">
+                            <form class="mt-5">
+                                <input type="radio" name="E1" id="E1_1"> <b>x-25=0</b><br>
+                                <input type="radio" name="E1" id="E1_2"> <b>x<sup><b>2</b></sup>-25=0</b><br>
+                                <input type="radio" name="E1" id="E1_1"> <b>x-x-25=0</b><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EASY-->
+            <div class="col-sm-12">
+                <div class="card shadow p-3 mb-5" id="ejer2">
+                    <div class="card-body mx-auto">
+                        <img src="../../IMG/MODULO3/ejercicio2M3.png" class="float-left mb-2">
+                        <div class="mx-auto">
+                            <form>
+                                <input type="radio" name="colors" id="E2_1"> <b>x-64=0</b><br>
+                                <input type="radio" name="colors" id="E2_2"> <b>x<sup><b>2</b></sup>=-64</b><br>
+                                <input type="radio" name="colors" id="E2_3"> <b>x<sup><b>2</b></sup>-64=0</b><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="card shadow p-3 mb-5" id="ejer3">
+                    <div class="card-body mx-auto">
+                        <img src="../../IMG/MODULO3/ejercicio3M3.png" class="float-left mb-2">
+                        <div class="mx-auto">
+                            <form>
+                                <input type="radio" name="colors" id="E3_1"> <b>5x<sup><b>2</b></sup>-3=10</b><br>
+                                <input type="radio" name="colors" id="E3_2"> <b>5x-3=10</b><br>
+                                <input type="radio" name="colors" id="E3_3"> <b>5(x-3)=10</b><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="card shadow p-3 mb-5" id="ejer4">
+                    <div class="card-body mx-auto">
+                        <img src="../../IMG/MODULO3/ejercicio4M3.png" class="float-left mb-2">
+                        <div class="mx-auto">
+                            <form>
+                                <input type="radio" name="colors" id="E4_1"> <b>2x-6=0</b><br>
+                                <input type="radio" name="colors" id="E4_2"> <b>x-2=6</b><br>
+                                <input type="radio" name="colors" id="E4_3"> <b>x<sup><b>2</b></sup>-4=0</b><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="card shadow p-3 mb-5" id="ejer5">
+                    <div class="card-body mx-auto">
+                        <img src="../../IMG/MODULO3/ejercicio5M3.png" class="float-left mb-2">
+                        <div class="mx-auto">
+                            <form>
+                                <input type="radio" name="colors" id="E5_1"> <b>x<sup><b>2</b></sup>-16x=6</b><br>
+                                <input type="radio" name="colors" id="E5_2"> <b>x<sup><b>2</b></sup>-10x=0</b><br>
+                                <input type="radio" name="colors" id="E5_3"> <b>x<sup><b>2</b></sup>-6x=16</b><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="card shadow p-3 mb-5" id="ejer6">
+                    <div class="card-body mx-auto">
+                        <img src="../../IMG/MODULO3/ejercicio6M3.png" class="float-left mb-2">
+                        <div class="mx-auto">
+                            <form>
+                                <input type="radio" name="colors" id="E6_1"> <b>6x-3=0</b><br>
+                                <input type="radio" name="colors" id="E6_2"> <b>3x-6=0</b><br>
+                                <input type="radio" name="colors" id="E6_3"> <b>x<sup><b>3</b></sup>-6=0</b><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="card shadow p-3 mb-5">
+                    <div class="card-body">
+                        <p>Verificar resultados</p>
+                        <input type="button" class="btn btn-primary" name="btn1" id="btn1" value="Comprobar"
+                            onclick="ejercicio1()">
+                        <br>
+                        <br>
+                        <p id="respuesta1">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function ejercicio1() {
+            var cont = 0;
+            var e1 = false;
+            var e2 = false;
+            var e3 = false;
+            var e4 = false;
+            var e5 = false;
+            var e6 = false;
+
+            if (document.getElementById("E1_2").checked == true) {
+                cont++;
+                e1 = true;
+            }
+            if (document.getElementById("E2_3").checked == true) {
+                cont++;
+                e2 = true;
+            }
+            if (document.getElementById("E3_3").checked == true) {
+                cont++;
+                e3 = true;
+            }
+            if (document.getElementById("E4_1").checked == true) {
+                cont++;
+                e4 = true;
+            }
+            if (document.getElementById("E5_3").checked == true) {
+                cont++;
+                e5 = true;
+            }
+            if (document.getElementById("E6_2").checked == true) {
+                cont++;
+                e6 = true;
+            }
+
+            // ahora si xdxd
+            //contamos solamente los valores buenos, para luego traducirlo en una nota
+            valorp = 10 / 6;
+            puntos = valorp * cont;
+            var txt = "Has obtenido un total de " + puntos.toFixed(2) + " puntos de 10.";
+            //modificacion de las clases
+            if (e1 == false) {
+                document.getElementById("ejer1").className += " bg-danger";
+            } else {
+                document.getElementById("ejer1").className += " bg-success";
+            }
+            if (e2 == false) {
+                document.getElementById("ejer2").className += " bg-danger";
+            } else {
+                document.getElementById("ejer2").className += " bg-success";
+            }
+            if (e3 == false) {
+                document.getElementById("ejer3").className += " bg-danger";
+            } else {
+                document.getElementById("ejer3").className += " bg-success";
+            }
+            if (e4 == false) {
+                document.getElementById("ejer4").className += " bg-danger";
+            } else {
+                document.getElementById("ejer4").className += " bg-success";
+            }
+            if (e5 == false) {
+                document.getElementById("ejer5").className += " bg-danger";
+            } else {
+                document.getElementById("ejer5").className += " bg-success";
+            }
+            if (e6 == false) {
+                document.getElementById("ejer6").className += " bg-danger";
+            } else {
+                document.getElementById("ejer6").className += " bg-success";
+            }
+            //agregamos el puntaje final
+            document.getElementById("respuesta1").innerHTML = txt;
+            document.getElementById("btn1").disabled = true;
+
+        }
+    </script>
+</body>
+
+</html>

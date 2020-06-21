@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+body{
+    background: #060c21;
+}
+.container{
+    position:relative;
+    width: 90%;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+}
+.container .box{
+    position: relative;
+    height: auto;
+    background: #1e3175;
+    justify-content:center;
+    align-items: center;
+    border: 1px solid #000; 
+    margin-top: 20px;
+    margin-left: -30px;
+    
+}
+.container .box::before{
+    content: '';
+    position: absolute;
+    top:-2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+    
+}
+
+.content{
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+
+.box .content a{
+    position: relative;
+    margin: 20px 0 0;
+    padding:10px 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    display: inline-block;
+    color: white;
+    transition: 0.5s;
+    transform: rotateY(-40px);
+    opacity:0;
+    visibility: hidden;
+ 
+}
+.box:hover .content a{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.box .content a:hover{
+    
+    color: rgb(12, 11, 10);
+    background: lightgreen;
+}
+
+
+
+#image{
+    text-align: center;
+
+}
+#titulo{
+    color: rgb(119, 169, 216);
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+#nav{
+    background: #1a9696;
+    color: #060c21;
+}
+
+#indice{
+    margin-top: 25px;
+    color: lightgreen;
+}
+#roow{
+    background:#060c21;
+    border: redonded;
+    margin-top: 20px;
+    border: rounded;
+}
+#roowTeoria{
+    background : white;
+    border: redonded;
+    margin-top: 20px;
+    border: rounded;
+}
+#cardTema1{
+    color: black;
+    margin-left: 500px;
+}
+#letraPTema1{
+    width: 80px; 
+    margin-left: -10px;
+}
+#teoria{ 
+    color: rgb(199, 218, 199);
+}
+#temas{
+    color: lightblue;
+}
+#tema1{
+    color: rgb(11, 107, 139);
+}
+.modal-backdrop{
+    position: relative; 
+}
+#exampleModalLabel, #contenidoModal{
+    color: black;
+}
+#cajaContenido{
+    background: white;
+}
+#imageCont{
+    height: 300px;
+    width: 100px;
+}
+#cardCont{
+    width: 100%;
+}
+
+#alertPrimaryTema2{
+    background: #d8f6ff;
+    color: black;
+}
+#card-body{
+    margin-left: 25px;
+}
+#alertPrimaryTema3{
+    background: #d8f6ff;
+    margin-left: 25px;
+    color: black;
+}
+
+#letraC{
+    margin-left: -60px;
+    margin-top: -230px;
+}
+#letraCTema2{
+    margin-left: -60px;
+    margin-top: -60px;
+}
+#letraCTema3{
+    margin-left: -60px;
+    margin-top: -75px;
+}
+#letraCTema1{
+    margin-left: -60px;
+    margin-top: -70px;
+}
+#alertSucessTema3{
+    margin-left: 500px;
+    margin-top: 10px;
+}
+#alertProcedimiento{
+    border: purple;
+    margin-left: 25px;
+    border-style: solid;
+    color:  black;
+}
+#alertProcedimientoTema2{
+    border: purple;
+    border-style: solid;
+    color:  black;
+    margin-bottom: 40px;
+}
+#tema2alertPrimay{
+    margin-left: 320px;
+    margin-top: -200px;
+}
+#imgStema3{
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+#imgFormulaTema3{
+    margin-left: 600px;
+    margin-top: -50px;
+    width: 150px;
+}
+#formula2Tema3{
+    margin-left: 120px;
+}
+#subtema3{
+    color: black;
+    font-size: 16px;
+    font-style: sans-serif;
+}
+#subtema2{
+    color: black;
+}
+#letraPTema2{
+    width: 80PX;
+}
+#contTema2{
+    color: black;
+    margin-left: 90px;
+}
+#btnTema1{
+    margin-left: 350px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#btnTema2{
+    margin-left: 350px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#btnTema3{
+    margin-left: 350px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#imgBinomio{
+    width: 25%;
+}
+#figurasTema1{
+    width: 600px;
+    height: 180px;  
+    margin-left: 150px;
+}
+
+#alertTema1{
+    margin-left: 450px;
+    margin-top: -100px;
+}
+#figura2Tema1{
+    width: 400px;
+    margin-left: 90px;
+}
+#alertPrimaryTema1{
+    background: #d8f6ff;
+    margin-top: 50px;
+    margin-left: 25px;
+    color: black;
+}
