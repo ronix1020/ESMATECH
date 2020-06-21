@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Función Cuadrática</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script>
+        //window.onbeforeunload = function () {
+        //    return "¿Desea recargar la página web?";
+        //};
+    </script>
+
+</head>
+
+<body class="bg-dark">
+    <div class="container mb-4">
+        <!-- BARRA NAVEGACION -->
+        <nav class="navbar navbar-expand-lg navbar navbar-dark d-flex bg-dark shadow p-3 mb-5 bg-dark rounded">
+            <a class="navbar-brand gradient-font" href="../index.html">
+                <h4><b>ESMATECH</b></h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link pl-4 pr-4" style="color: #009D7A;" href="../index.html"><i
+                                class="fas fa-home pr-2"></i><b>Inicio</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-4 pr-4" style="color: #009D7A;" href="#"><i
+                                class="fas fa-star pr-2"></i><b>Acerca
+                                de</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-4 pr-4" style="color: #009D7A;" href="#"><i
+                                class="fas fa-info pr-2"></i><b>Ayuda</b></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row bg-light rounded">
+            <div class="col-sm-12">
+                <div class="card shadow mb-5 mt-5" id="ejer1">
+                    <div class="card-body">
+                        <p>
+                            <b>1. </b>El área del cuadrado es directamente proporcional al cuadrado de su diagonal, donde <i>a =
+                                <sup>1</sup>&frasl;<sub>2</sub></i>.
+                            <br>
+                            a) Completa los valores para el área en la siguiente tabla, donde <i>x</i> representa la
+                            diagonal del cuadrado
+                            (en cm) y <i>y</i> es el área (en cm<sup>2</sup>) del mismo:
+                        <table class="table table-bordered mx-auto">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><i>x</i></th>
+                                    <th scope="col">0</th>
+                                    <th scope="col">1</th>
+                                    <th scope="col">2</th>
+                                    <th scope="col">3</th>
+                                    <th scope="col">4</th>
+                                    <th scope="col">5</th>
+                                    <th scope="col">6</th>
+                                    <th scope="col">7</th>
+                                    <th scope="col">8</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><i>x<sup>2</sup></i></th>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>9</td>
+                                    <td>16</td>
+                                    <td>25</td>
+                                    <td>36</td>
+                                    <td>49</td>
+                                    <td>64</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i>y</i></th>
+                                    <td>0</td>
+                                    <td>0.5</td>
+                                    <td>2</td>
+                                    <td>4.5</td>
+                                    <div id="zonasDeSoltar">
+                                        <td class="zona-de-soltar" id="R1"></td>
+                                        <td class="zona-de-soltar" id="R2"></td>
+                                        <td class="zona-de-soltar" id="R3"></td>
+                                        <td class="zona-de-soltar" id="R4"></td>
+                                        <td class="zona-de-soltar" id="R5"></td>
+                                    </div>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Arrastra los numeros correctos hasta la casilla correcta:
+                        </p>
+                        <div id="arrastrables" class="mb-4">
+                            <div class="arrastrable" id="E1R4" draggable="true">
+                                <label>24.5</label>
+                            </div>
+
+                            <div class="arrastrable" id="E1RR" draggable="true">
+                                <label>25</label>
+                            </div>
+
+                            <div class="arrastrable" id="E1R1" draggable="true">
+                                <label>8</label>
+                            </div>
+
+                            <div class="arrastrable" id="E1R5" draggable="true">
+                                <label>32</label>
+                            </div>
+                            <div class="arrastrable" id="E1RR" draggable="true">
+                                <label>12</label>
+                            </div>
+                            <div class="arrastrable" id="E1R2" draggable="true">
+                                <label>12.5</label>
+                            </div>
+                            <div class="arrastrable" id="E1RR" draggable="true">
+                                <label>19</label>
+                            </div>
+                            <div class="arrastrable" id="E1R3" draggable="true">
+                                <label>18</label>
+                            </div>
+                        </div>
+                        <p class="mb-3">
+                            <b>b)</b> Selecciona la respuesta correcta al enunciado siguiente:
+                            <i>"<b>y</b> (el área) en términos de <b>x</b> (su diagonal)"</i>
+                        </p>
+                        <div class="mx-auto" id="RB11">
+                            <form>
+                                <input type="radio" name="E1M4" id="E1_1"> <b><i>y=<sup>1</sup>&frasl;2
+                                        x<sup><b>2</b></sup></i></b><br>
+                                <input type="radio" name="E1M4" id="E1_2"> <b><i>y=<sup>1</sup>&frasl;2
+                                        x<sup></sup></i></b><br>
+                                <input type="radio" name="E1M4" id="E1_3"> <b><i>y=x<sup><b>2</b></sup></i></b><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- SEGUNDO EJERCICIO -->
+                <div class="col-sm-12">
+                    <div class="card shadow mb-5 mt-5" id="ejer1">
+                        <div class="card-body">
+                            <p>
+                                <b>2. </b>El área del círculo es directamente proporcional al cuadrado de su radio.
+                            </p>
+                            <p>
+                                <b>a)</b> ¿Cuál es el valor de la constante?
+                            </p>
+                            <div class="mx-auto" id="RB22">
+                                <form>
+                                    <input type="radio" name="E2M4" id="E2_1"> <b><i>r<sup><b>2</b></sup></i></b><br>
+                                    <input type="radio" name="E2M4" id="E2_2"> <b><i>&#928;</i></b><br>
+                                    <input type="radio" name="E2M4" id="E2_3"> <b><i>x</i></b><br>
+                                </form>
+                            </div>
+                            <p class="mt-4">
+                                <b>b)</b> Si <b>x</b> representa el radio del círculo y <b>y</b> 
+                                su área, marca la respuesta correcta teniendo en cuenta que <b>y</b> está escrita en términos de <b>x</b>.
+                            </p>
+                            <div class="mx-auto" id="RB33">
+                                <form>
+                                    <input type="radio" name="E3M4" id="E3_1"> <b><i>y=&#928;x<sup><b>2</b></sup></i></b><br>
+                                    <input type="radio" name="E3M4" id="E3_2"> <b><i>x=&#928;y<sup><b>2</b></sup></i></b><br>
+                                    <input type="radio" name="E3M4" id="E3_3"> <b><i>x<sup><b>2</b></sup>=&#928;</i></b><br>
+                                </form>
+                            </div>
+                            <p class="mt-4">
+                                <b>c) </b>Completa los valores para el área en la siguiente tabla:
+                            </p>
+                                <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><i>x</i></th>
+                                        <th scope="col">0</th>
+                                        <th scope="col">1</th>
+                                        <th scope="col">2</th>
+                                        <th scope="col">3</th>
+                                        <th scope="col">4</th>
+                                        <th scope="col">5</th>
+                                        <th scope="col">6</th>
+                                        <th scope="col">7</th>
+                                        <th scope="col">8</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><i>x<sup>2</sup></i></th>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>9</td>
+                                        <td>16</td>
+                                        <td>25</td>
+                                        <td>36</td>
+                                        <td>49</td>
+                                        <td>64</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i>y</i></th>
+                                        <td>0</td>
+                                        <div id="zonasDeSoltar">
+                                            <td class="zona-de-soltar" id="RR1"></td>
+                                            <td class="zona-de-soltar" id="RR2"></td>
+                                            <td class="zona-de-soltar" id="RR3"></td>
+                                            <td class="zona-de-soltar" id="RR4"></td>
+                                            <td class="zona-de-soltar" id="RR5"></td>
+                                            <td class="zona-de-soltar" id="RR6"></td>
+                                            <td class="zona-de-soltar" id="RR7"></td>
+                                            <td class="zona-de-soltar" id="RR8"></td>
+                                        </div>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Arrastra los numeros correctos hasta la casilla correcta:
+                            </p>
+                            <div id="arrastrables" class="mb-4">
+                                <div class="arrastrable" id="E2RR" draggable="true">
+                                    <label>2</label>
+                                </div>
+    
+                                <div class="arrastrable" id="E2R1" draggable="true">
+                                    <label>1</label>
+                                </div>
+    
+                                <div class="arrastrable" id="E2RR" draggable="true">
+                                    <label>5&#928;</label>
+                                </div>
+    
+                                <div class="arrastrable" id="E2R2" draggable="true">
+                                    <label>4&#928;</label>
+                                </div>
+                                <div class="arrastrable" id="E2R6" draggable="true">
+                                    <label>36&#928;</label>
+                                </div>
+                                <div class="arrastrable" id="E2RR" draggable="true">
+                                    <label>64.5&#928;</label>
+                                </div>
+                                <div class="arrastrable" id="E2R4" draggable="true">
+                                    <label>16&#928;</label>
+                                </div>
+                                <div class="arrastrable" id="E2R8" draggable="true">
+                                    <label>64&#928;</label>
+                                </div>
+                                <div class="arrastrable" id="E2R3" draggable="true">
+                                    <label>9&#928;</label>
+                                </div>
+                                <div class="arrastrable" id="E2R5" draggable="true">
+                                    <label>25&#928;</label>
+                                </div>
+                                <div class="arrastrable" id="E2RR" draggable="true">
+                                    <label>47&#928;</label>
+                                </div>
+                                <div class="arrastrable" id="E2R7" draggable="true">
+                                    <label>49&#928;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="card shadow p-3 mb-5">
+                        <div class="card-body">
+                            <p>Verificar resultados</p>
+                            <input type="button" class="btn btn-primary" name="btn1" id="btn1" value="Comprobar"
+                                onclick="ejercicio1()">
+                            <br>
+                            <br>
+                            <p id="respuesta1">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var elementoArrastrado;
+            document.addEventListener("drag", function (event) {
+                //console.log("drag")
+            }, false);
+
+
+            document.addEventListener("dragstart", function (event) {
+                // guarda información acerca del objeto arrastrado
+                event.dataTransfer.setData('text/plain', null)
+                // guarda una referéncia del elemento arrastrado
+                elementoArrastrado = event.target;
+                // cambia la opacidad del elemento a medio transparente
+                event.target.style.opacity = .5;
+            }, false);
+
+
+            document.addEventListener("dragend", function (event) {
+                // reestablece el valor de la opacidad
+                event.target.style.opacity = 1;
+            }, false);
+
+
+            document.addEventListener("dragover", function (event) {
+                // previene el comportamiento por defecto del elemento arrastrado
+                event.preventDefault();
+            }, false);
+
+            document.addEventListener("dragenter", function (event) {
+                // comprueba si el event.target es una zona de soltar  
+                if (event.target.className == "zona-de-soltar") {
+                    // y di lo és cambia el color de fondo
+                    event.target.style.background = "purple";
+                }
+
+            }, false);
+
+            document.addEventListener("dragleave", function (event) {
+                // comprueba si el event.target es una zona de soltar  
+                if (event.target.className == "zona-de-soltar") {
+                    // y si lo és, reestablece el valor inicial
+                    event.target.style.background = "";
+                }
+            }, false);
+
+            document.addEventListener("drop", function (event) {
+                // Si el elemento arrastrado es un link, este se abre en una nueve página.
+                // Para que esto no pase hay que utilizar: 
+                event.preventDefault();
+                // comprueba si el event.target es una zona de soltar
+                if (event.target.className == "zona-de-soltar") {
+                    // reestablece el valor inicial para el background
+                    event.target.style.background = "";
+                    // elimina el elemento arrastrado del del elemento padre
+                    elementoArrastrado.parentNode.removeChild(elementoArrastrado);
+                    // y lo agrega al elemento de destino
+                    event.target.appendChild(elementoArrastrado);
+                }
+
+            }, false);
+
+            function ejercicio1() {
+                var cont = 0;
+                //primero obtenemos los id de las celdas donde estan alojados las respuestas
+                var r1 = document.getElementById("R1").outerText;
+                var r2 = document.getElementById("R2").outerText;
+                var r3 = document.getElementById("R3").outerText;
+                var r4 = document.getElementById("R4").outerText;
+                var r5 = document.getElementById("R5").outerText;
+
+                var rr1 = document.getElementById("RR1").outerText;
+                var rr2 = document.getElementById("RR2").outerText;
+                var rr3 = document.getElementById("RR3").outerText;
+                var rr4 = document.getElementById("RR4").outerText;
+                var rr5 = document.getElementById("RR5").outerText;
+                var rr6 = document.getElementById("RR6").outerText;
+                var rr7 = document.getElementById("RR7").outerText;
+                var rr8 = document.getElementById("RR8").outerText;
+
+                var rb11 = document.getElementById("E1_1").checked;
+                var rb12 = document.getElementById("E1_2").checked;
+                var rb13 = document.getElementById("E1_3").checked;
+
+                var rb21 = document.getElementById("E2_1").checked;
+                var rb22 = document.getElementById("E2_2").checked;
+                var rb23 = document.getElementById("E2_3").checked;
+
+                var rb31 = document.getElementById("E3_1").checked;
+                var rb32 = document.getElementById("E3_2").checked;
+                var rb33 = document.getElementById("E3_3").checked; 
+                //console.log(r1);
+                //verificamos si tiene las respuestas correctas
+                if (r1 == "8") {
+                    console.log("Has respondido bien la 1");
+                    cont = cont + 0.6;
+                    document.getElementById("R1").className += " bg-success";
+                }
+                else{
+                    document.getElementById("R1").className += " bg-danger";
+                }
+                if (r2 == "12.5") {
+                    console.log("Has respondido bien la 2");
+                    cont = cont + 0.6;
+                    document.getElementById("R2").className += " bg-success";
+                }
+                else{
+                    document.getElementById("R2").className += " bg-danger";
+                }
+                if (r3 == "18") {
+                    console.log("Has respondido bien la 3");
+                    cont = cont + 0.6;
+                    document.getElementById("R3").className += " bg-success";
+                }
+                else{
+                    document.getElementById("R3").className += " bg-danger";
+                }
+                if (r4 == "24.5") {
+                    console.log("Has respondido bien la 4");
+                    cont = cont + 0.6;
+                    document.getElementById("R4").className += " bg-success";
+                }
+                else{
+                    document.getElementById("R4").className += " bg-danger";
+                }
+                if (r5 == "32") {
+                    console.log("Has respondido bien la 5");
+                    cont = cont + 0.6;
+                    document.getElementById("R5").className += " bg-success";
+                }
+                else{
+                    document.getElementById("R5").className += " bg-danger";
+                }
+
+                //SEGUNDA PARTE
+                if (rr1 == "1") {
+                    console.log("Has respondido bien la 1 de la 2");
+                    cont = cont + 0.5;
+                    document.getElementById("RR1").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR1").className += " bg-danger";
+                }
+                if (rr2 == "4Π") {
+                    console.log("Has respondido bien la 2 de la 2");
+                    cont = cont + 0.5;
+                    document.getElementById("RR2").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR2").className += " bg-danger";
+                }
+                if (rr3 == "9Π") {
+                    console.log("Has respondido bien la 3 de la 2");
+                    cont = cont + 0.5;
+                    document.getElementById("RR3").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR3").className += " bg-danger";
+                }
+                if (rr4 == "16Π") {
+                    console.log("Has respondido bien la 4 de la 2");
+                    cont = cont + 0.5;
+                    document.getElementById("RR4").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR4").className += " bg-danger";
+                }
+                if (rr5 == "25Π") {
+                    console.log("Has respondido bien la 5 de la 2");
+                    cont = cont + 0.5;
+                    document.getElementById("RR5").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR5").className += " bg-danger";
+                }
+                if (rr6 == "36Π") {
+                    console.log("Has respondido bien la 6 de la 2");
+                    cont = cont + 0.5;
+                    document.getElementById("RR6").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR6").className += " bg-danger";
+                }
+                if (rr7 == "49Π") {
+                    console.log("Has respondido bien la 7 de la 2");
+                    cont = cont + 0.5;
+                    document.getElementById("RR7").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR7").className += " bg-danger";
+                }
+                if (rr8 == "64Π") {
+                    console.log("Has respondido bien la 8 de la 2");
+                    cont = cont + 0.5;
+                    document.getElementById("RR8").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RR8").className += " bg-danger";
+                }
+
+                console.log("puntos obtenidos PRIMERA PARTE" + cont)
+
+                //radiobuttons
+                if (rb11 == true){
+                    cont = cont + 1;
+                    document.getElementById("RB11").className += " bg-success"; 
+                }
+                else{
+                    document.getElementById("RB11").className += " bg-danger";
+                }
+                if(rb22 == true){
+                    cont = cont + 1;
+                    document.getElementById("RB22").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RB22").className += " bg-danger";
+                }
+                if(rb31 == true){
+                    cont = cont + 1;
+                    document.getElementById("RB33").className += " bg-success";
+                }
+                else{
+                    document.getElementById("RB33").className += " bg-danger";
+                }
+
+                console.log("puntos obtenidos SEGUNDA PARTE" + cont)
+                //publicamos los resultados
+                document.getElementById("respuesta1").innerHTML = "Tus puntos obtenidos son <b>" + cont + "</b>";
+            }
+
+        </script>
+</body>
+
+</html>
